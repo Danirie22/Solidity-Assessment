@@ -1,0 +1,15 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.7;
+
+contract Ethers{
+
+    function ethers (uint _ether) external pure returns(uint){
+        return _ether * 1e18 wei;
+    }
+    function Wei(uint _wei) external pure returns (uint){
+        return _wei * 1 wei;
+    }
+    function Gwei (uint _gwei) external pure returns(uint){
+        return _gwei * 1e9 wei;
+    }
+}
